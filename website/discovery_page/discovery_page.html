@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="discovery_page.css">
+    <link rel="stylesheet" href="../others/navigation_bar.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <title>others</title>
+</head>
+<body>
+<div class="navbar">
+    <a href="discovery_page.html" class="active">Unexpected Discovery</a>
+    <a href="../review_page/reviews_page.html">Reviews</a>
+    <a href="../book_page/book_page.html">Book</a>
+    <a href="../map_pave/map_page.html">Life Map</a>
+    <a href="../homepage/homepage.html">Introduction</a>
+
+
+</div>
+
+<div class="text">
+    <h2>DISCOVER1: QUOTATIONS</h2>
+
+    <p>
+        This book does have a lot of quotations to keep thinking about, and using this as a clue, we once again went
+        through
+        all the reviews by distant reading and figured out which article or text was quoted the most.
+    </p>
+</div>
+
+<div class="plot_container">
+    <iframe src="https://public.tableau.com/views/mostquotedchapter/1?:publish=yes:showVizHome=no&amp;:embed=true"
+            width="2000" height="600" scrolling="no" style="border: 0px;">
+    </iframe>
+
+</div>
+
+<div class="analysis">
+    <div class="analysis-left">
+        <h2>Who exactly was the conversation with?</h2>
+        <p>
+            In the sections where the frequency of quotations exceeds 200, all of them come from dialog rather than from
+            the
+            55 city stories. They are the opening dialog of Chapter 2, the opening dialog of Chapter 3, and the last
+            dialog
+            of the entire book.
+        </p>
+        <p>
+            These three sentences are quoted most frequently, They convey the author's thoughts to the reader more
+            directly than obscure metaphors, while also revealing to some extent the principle of the book.
+            However, when we consider it from another angle, Marco Polo may be Calvino, and this Khan is the reader.
+            <span class="bold-text">Then the nine dialogues are in fact the author's conversations with the inhabitants of that era.</span>
+            And the fact that the book is regarded as a classic to this day is a reflection of the fact that Calvino
+            really did touch on the things that have been overlooked behind the urban life of our time.
+        </p>
+    </div>
+    <div class="analysis-right">
+
+        <p class="quote">
+            "There are two ways to escape suffering it. The first is easy for many: accept the inferno and
+            become such a
+            part of it that you can no longer see it. The second is risky and demands constant vigilance and
+            apprehension: seek and learn to recognize who and what" <span class="quote_location">-Dialog 9.2</span>
+        </p>
+
+        <p>
+            "Cities, like dreams, are made of desires and fears, even if the thread of their discourse is
+            secret, their
+            rules are absurd, their perspectives deceitful, and everything conceals something else." <span
+                class="quote_location">-Dialog 3.1</span>
+        </p>
+
+
+        <p>
+            "Arriving at each new city, the traveller finds again a past of his that he did not know he had:
+            the foreignness of what you no longer are or no longer possess lies in wait for you in foreign, unpossessed
+            places." <span class="quote_location">-Dialog 2.1</span>
+        </p>
+
+        <p>"Polo said. 'Perhaps I am afraid of losing Venice all at once, if I speak of it. Or perhaps,
+            speaking of other cities, I have already lost it, little by little.'" <span class="quote_location">-Dialog 6.1</span>
+        </p>
+
+
+        <p>
+            "Perhaps, Kublai thought, the empire is nothing but a zodiac of the mind's phantasms. 'On the day
+            when I know all the emblems,' he asked Marco, 'shall I be able to possess my empire, at last?' And the
+            Venetian answered: 'Sire, do not believe it. On that day you will be an emblem among emblems." <span
+                class="quote_location">-Dialog 1.2</span>
+        </p>
+    </div>
+</div>
+
+
+<div class="analysis">
+
+    <div class="analysis-right">
+        <h2>DISCOVER2: READER BEHAVIOR</h2>
+        <h3>Is COVID-19 lead a reading wave?</h3>
+        <p>
+            In the database, the time when a user posts a comment is also recorded. A brief exploration revealed
+            some
+            unexpected takeaways. The first is that comments began to increase paradoxically in March 2020, which
+            may be
+            related to the closure of the city due to the Shinkan epidemic. Based on the distribution of the data
+            <span class="blue">over these
+            18 years</span>, there were more reviews posted in January, December, and July, and relatively low in the
+            other
+            months, which may be closely related to the two holidays in the summer and fall. However,<span
+                class="red">in March 2020,</span> the
+            book saw an anomalous uptick in reviews, which, in conjunction with the time period, can be hypothesized
+            that
+            the city closure may have made it possible for more people to have time to read it.
+        </p>
+        <h3>
+            If on a midnight a reader
+        </h3>
+        <p>
+            The time of day significantly impacts when reviews are posted. Interestingly, the data suggests that
+            <span class="bold-text">reviewers are more active during the night</span>. After 6 am, there is a steady decrease in the number of reviews
+            posted, bottoming out at 2 pm. There's a slight bump at 11 am, possibly indicating a break time when people
+            might post reviews.
+
+            Following the lull in the early afternoon, the number of reviews gradually starts to increase, with a more
+            pronounced rise from 8 pm. The peak occurs at 11 pm, suggesting that many reviewers prefer to post their
+            thoughts late in the evening, potentially after finishing their daily activities.
+
+            This activity level remains relatively high throughout the night until it drops dramatically at 6 am,
+            possibly when most people are going to sleep or starting their day with other activities.
+
+            This pattern could indicate that people prefer to read and review during their downtime in the evening and
+            night. It may also reflect the habits of certain demographics, such as students or working professionals,
+            who have more free time in the evening.
+        </p>
+
+    </div>
+
+
+    <div class="analysis-left">
+        <div class="plot_2020_container">
+            <img src="../SVG/dashboard.svg" alt="2020" id="plot_2020">
+        </div>
+        <div class="plot_hour_container">
+            <img src="../SVG/dashboard2.svg" alt="2020" id="plot_hour">
+        </div>
+    </div>
+
+
+</div>
+
+<dvi class="analysis">
+    <div class="analysis-left">
+
+    </div>
+    <div class="analysis-right">
+
+    </div>
+</dvi>
+
+</body>
+</html>
