@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'PTMono_regular';
+    src: url('../font/PTMono-Regular-02.woff') format('woff');
+    unicode-range: U+0000-00FF;
+}
+
+@font-face {
+    font-family: 'PTMono_bold';
+    src: url('../font/PTMono-Bold-01.woff') format('woff');
+    unicode-range: U+0000-00FF;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    background-image: url('../image/6-Salt and Pepper.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0;
+}
+
+#title {
+    font-family: 'PTMono_regular';
+}
+
+
+.default_container{
+    display: flex;
+    flex-direction: column;
+    width:600px;
+    padding-right:50px;
+    padding-left:50px;
+    margin-bottom: -30%;
+
+}
+
+.default_doc{
+    opacity: .8;
+    font-family: PTMono_regular;
+}
+
+.topic word plot {
+    display: flex;
+    left:50%;
+}
+
+.bold-text {
+    font-family: PTMono_bold;
+}
+
+.description{
+    margin-top: 30px;
+    font-family: PTMono_regular;
+    opacity: .8;
+}
+
+.represent{
+    padding: 10px;
+}
+
+.doc{
+    font-family: PTMono_regular;
+    opacity: 1;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-column {
+    width: 75%; /* Adjust as necessary */
+}
+
+.right-column {
+    width: 50%;
+}
+
+.search-box {
+    z-index: 999;
+}
+
+#topicSelect {
+    display: block;
+    position: relative;
+    width: 250px;
+    margin-left: 60%;
+    margin-bottom: -8%;
+    margin-top: 20%;
+    z-index: 999;
+}
+.default_info{
+    font-family: PTMono_regular;
+    font-size: 15px;
+    color: #0E0E10;
+    position: absolute;
+    width: 40%;
+    top:17%;
+    z-index: 1;
+}
+
+.note{
+    margin-top: 10%;
+    opacity:0.8;
+
+}
+
+#mySvg{
+    padding-top: 500px;
+}
+
+.topic-info {
+    width:600px;
+    padding-top: 50px;
+    padding-right:50px;
+    padding-left:55px;
+}
+
+#startSelectionBtn {
+    border:none;
+    background-color: transparent;
+    height: 80%;
+    width: 80%;
+    margin-top: -10%;
+    cursor: pointer;
+}
+
+
+.node {
+    font: 10px sans-serif;
+}
+.link {
+    stroke-opacity: 0.5;
+    fill: none;
+    pointer-events: none;
+    stroke: steelblue;
+}
+.legend {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.bar { fill: steelblue; }
+.bar:hover { fill: brown; }

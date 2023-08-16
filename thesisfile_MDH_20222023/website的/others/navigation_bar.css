@@ -1,0 +1,35 @@
+.navbar {
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar {
+    position: fixed; /* Fix position to the top of the page */
+    top: 0; /* Position at the top */
+    width: 100%; /* Make it span the full width of the page */
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+
+/* Style the navigation links */
+.navbar a {
+    float: right;
+    display: block;
+    color: #b6bbbe;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: PTMono_regular;
+
+}
+
+/* Change the color of the links when you hover over them */
+.navbar a:hover {
+    color: #75809c;
+}
+
+/* Change the color of the active/current link */
+.navbar a.active {
+    color: #75809c;
+}

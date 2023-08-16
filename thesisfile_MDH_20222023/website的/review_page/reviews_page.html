@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Sankey Diagram</title>
+    <link rel="stylesheet" href="reviews_page.css">
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-sankey.min.js"></script>
+    <link rel="stylesheet" href="../others/navigation_bar.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="../discovery_page/discovery_page.html">Unexpected Discovery</a>
+    <a href="reviews_page.html" class="active">Reviews</a>
+    <a href="../book_page/book_page.html">Book</a>
+    <a href="../map_pave/map_page.html">Life Map</a>
+    <a href="../homepage/homepage.html">Introduction</a>
+
+
+</div>
+
+<div class="screen">
+    <div id="first_page">
+
+        <div id="first_left">
+            <h2 id="title">DECODING GOODREADS:A BOOK REVIEW ANALYSIS</h2>
+            <p>Goodreads is a social cataloging application website that allows readers to
+                search its database of books, annotations, quotes, and reviews.</p>
+            <p>
+            <ul>
+                <li><span class="bold-text">78,363</span> ratings</li>
+                <li><span class="bold-text">6267</span> reviews (until 27th July 2023)</li>
+                <li><span class="bold-text">4.12</span> average rating</li>
+            </ul>
+            </p>
+            <p>
+                An analysis of over 6000 book reviews (as of February 16, 2023) revealed that the majority (4120) were
+                in English, likely due to Goodreads' American origin. Reviews in Italian, Spanish, Portuguese, Turkish,
+                and Arabic were also significant.
+
+
+        </div>
+
+        <div id="first_right">
+            <p>I identified five key themes from the English reviews:</p>
+            <ul>
+                <li class="bold-text">Genre-Related</li>
+                <li class="bold-text">Recommendation-Related</li>
+                <li class="bold-text">Personal Reflections</li>
+                <li>Structure-Related</li>
+                <li>Quotes</li>
+            </ul>
+            </p>
+            <p>
+                The focus will primarily be on the first three categories. We will conduct further thematic
+                modeling on each of these, allowing us to delve deeper into and summarize the thoughts of the readers.
+            </p>
+
+
+        </div>
+    </div>
+
+    <div class="container" id="sankey_whole_container">
+        <script src="../sankey/sanky_example.js"></script>
+    </div>
+</div>
+
+<div class="screen">
+    <div class="topic_modeling_info">
+        <div class="left">
+            <h2>What Imagination has to do with cities</h2>
+            <p>
+                Although the five Topics were artificially summarized, two of the most
+                frequently mentioned themes, and also two of the most significant features of the book, were found by
+                clustering again within each cluster, <span class="bold-text">Imagination & Metaphor, and Poetic Compelling. </span>
+            </p>
+
+            <p>This unique combination stems from his understanding of literary ethics and social potential:</p>
+
+            <p id="imagation_quote">
+                "&nbsp&nbsp continue to believe in the appeal to hunger, in the classes that are hungry. If I were a
+                specialist
+                in food
+                production . . . , I would devote myself to issues concerning how to feed millions of people, which
+                implies
+                changes to the most stubborn of cultural habits. . . . But, instead, I am a specialist in imaginative
+                and verbal
+                material, and I dedicate myself to the hunger for written words, for stories told, for mythological fi
+                gures:
+                all stuff that is no less essential than food, as we all know.&nbsp&nbsp"
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            </p>
+            <p>
+
+            </p>
+            <p>-Italo Calvino</p>
+
+            <p>While Poetic Compelling is undoubtedly a tribute to Calvino's linguistic ability, imagination and
+                metaphor are not very friendly to every reader, especially when combined</p>
+
+
+        </div>
+
+        <div class="right" id="second_right">
+
+
+            <p>
+                 in a way that is often
+                confusing. This imagination was undoubtedly his most powerful weapon as a writer, to awaken the then
+                sleeping reader. So to understand this wild imagination and the meaning behind it, we have to go back to
+                the time before the book was published.
+            </p>
+            <p>
+                In the 1950s, Italy achieved impressive economic growth through the Marshall Plan. In the two decades
+                between '50 and '70, Italy's per capita income grew faster than that of any other European country. This
+                could not have been achieved without the agrarian and fiscal reforms initiated in the 1950s, during
+                which a massive population shift took place, with industrialization and modernization in the north
+                attracting large numbers of people and exacerbating social contrasts. <span class="bold-text">Modernization and
+                industrialization accelerated the expansion of urban homogeneity. </span>
+            </p>
+
+            <p>
+                Some scholars of urban studies have argued that the idea of the city as a fundamental factor in human
+                development has led to <span class="bold-text">the cities of this era being seen as the physical manifestation of the ill
+                effects on human society of profit, waste, expansion for the sake of expansion, and mechanization that
+                obscures the true meaning of life. </span><a href="https://en.wikipedia.org/wiki/The_City_in_History"
+                                                             target="_blank">Lewis
+                Mumford, in 'Cities in history '</a> states grimly: "The
+                ultimate
+                damage may be irreplaceable." She bemoans the failure of capitalism to create a spiritually and socially
+                stimulating environment, instead striving for a homogenized nothingness that "creates more and more
+                featureless landscapes inhabited by more and more featureless people"
+
+            </p>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="screen_genre">
+    <div class="container" id="sankey_genre_container">
+        <script src="../sankey/sankey_genre.js"></script>
+    </div>
+
+    <div class="genre_right">
+        <p>
+            In addition to Poetic Compelling and Imagination, there are some interesting finding from this sub-cluster.
+            Among them, <span class="bold-text"><a href="https://en.wikipedia.org/wiki/Jorge_Luis_Borges" target="_blank">Jorge Luis Borges</a></span>
+            is the most
+            mentioned author, who innovated fiction language by creating
+            innovative literary symbols through imagination. Especially <a
+                href="https://en.wikipedia.org/wiki/The_Aleph_and_Other_Stories" target="_blank">'El Aleph'</a> is a
+            collection of short
+            stories
+            exploring themes such as dreams, mazes, chance, infinity, archives, mirrors, fictional authors, and myths.
+        </p>
+        <p>
+            Another thing worth noting is book of <span class="bold-text"><a href="https://en.wikipedia.org/wiki/Einstein%27s_Dreams"
+                                                                             target="_blank">'Einstein's
+            Dreams'</a></span>written by
+            <a href="https://en.wikipedia.org/wiki/Alan_Lightman" target="_blank">Alan Lightman</a>. The novel follows
+            Albert
+            Einstein as a young scientist who is haunted by dreams in 1905 while researching the theory of relativity.
+            Each of the 30 chapters in the book explores a dream about time that Einstein had during this period.
+
+        </p>
+
+        <p>
+            As a clue, the Named-entity recognition tool was used to identify these sentences and find out
+            which writers were mentioned in the comments, and then Wikipedia was used to build a network between these
+            writers. Then, we use Wikipedia to build a network between these writers, and from the following social
+            network, it is easy to find that many of the mentioned writers are <span class="bold-text">famous for their imagination
+
+        </span>, and have a
+            <span class="bold-text">
+                strong sense of <a href="https://en.wikipedia.org/wiki/Postmodernism" target="_blank">postmodernism</a> and <a
+                    href="https://en.wikipedia.org/wiki/Magic_realism" target="_blank">magic realism</a>
+            </span>, and can even be <span class="bold-text">
+            linked to humanism.
+        </span>
+        </p>
+
+
+
+    </div>
+
+</div>
+<div id="social_network_title">
+
+</div>
+<div>
+    <div id="social_network_title">
+        <h2>Social Network Mentioned In Reviews</h2>
+        <p>hover each photo will get the author's name, and click it to see the Wikipedia link.</p>
+    </div>
+
+    <div class="topic_modeling_info" id="social_network">
+        <iframe src="https://public.tableau.com/views/genre_social_network/1_1?:publish=yes:showVizHome=no&amp;:embed=true"
+                width="2000" height="680" scrolling="no" style="border: 0px;">
+        </iframe>
+    </div>
+</div>
+
+<div class="screen_personal">
+    <div class="container" id="sankey_personal_container">
+        <script src="../sankey/sankey_personal.js"></script>
+    </div>
+
+    <div class="personal_right">
+        <p>As we mentioned before, the cities of the 1960s were undergoing a series of intensely homogenized expansions.
+            In Italy, urbanization accelerated, triggering real estate speculation and hasty construction.
+        </p>
+
+        <p>
+            The author was undoubtedly greatly influenced by the academic debate in the 1960s, and
+            his work for a publishing house brought him into contact with a large number of books on cities,
+            architecture and utopias that continue to influence generations of architects and urban planners today:
+        </p>
+        <ul>
+            <li>Aldo Rossi's <a href="https://en.wikipedia.org/wiki/The_Architecture_of_the_City" target="_blank">L'architettura
+                della
+                citta'</a>' (The Architecture of the City)
+            </li>
+            <li>Vittorio Gregotti's <a href="https://it.wikipedia.org/wiki/Il_territorio_dell%27architettura"
+                                       target="_blank">'Il
+                territorio dell'architettura'</a> (The Territory of Architecture)
+            </li>
+            <li>Robert Venturi's <a
+                    href="https://www.architectural-review.com/essays/books/complexity-and-contradiction-changed-how-we-look-at-think-and-talk-about-architecture"
+                    target="_blank">'Complexity
+                and Contradiction in Architecture'</a>
+            </li>
+            <li>Jane Jacobs's revolutionary <a
+                    href="https://en.wikipedia.org/wiki/The_Death_and_Life_of_Great_American_Cities" target="_blank">'Death
+                and Life of
+                Great American Cities'</a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Peter_Hall_(urbanist)" target="_blank">Peter Hall's</a> 'The
+                World Cities'
+            </li>
+            <li>
+                Kevin Andrew Lynch's <a href="https://en.wikipedia.org/wiki/The_Image_of_the_City" target="_blank">'The
+                image of
+                city'</a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Lewis_Mumford" target="_blank">Lewis Mumford's</a> all work
+            </li>
+        </ul>
+        <p>
+            Through topic modeling techniques, we summarized two very relevant topics, 'Urban Society' and 'Slice of
+            Life', these two topics both do reflect the reader's thinking about contemporary life, especially urban
+            life.
+        </p>
+    </div>
+</div>
+
+
+<div class="screen" id="recommend">
+    <div class="container" id="sankey_recommend_container">
+        <script src="../sankey/sankey_recommend.js"></script>
+    </div>
+
+    <div class="personal_right">
+        <p class="recommend_quote">
+            "&nbsp&nbspBut all these pages together do not yet form a book: a book (I believe) is something that has a
+            beginning and
+            an end (even if it's not a novel in the strict sense), a space that the reader has to enter, to walk around
+            in,
+            and perhaps get lost in, but at some point to find an exit, perhaps multiple exits, to find a kind of
+            opening to
+            a way out of it possibility. One of you will say to me that this definition can apply to a novel with a plot
+            but
+            does not apply to a book like this one, <span class="bold-text">which one should read as one would read a poem, an essay, or at most
+            a
+            short story.</span> I would like to say, then, that even a book like this, because to be a book it should
+            have a
+            structure, that is to say one must find in it a plot, a journey, a conclusion.&nbsp&nbsp"
+        </p>
+        <p class="recommend_quote">
+            -Italo Calvino
+        </p>
+        <p>
+            As you can see from the analysis of the review, to some extent Calvino fulfills the purpose of the book; it
+            allows the reader to explore through the book over and over again. He is like a trial and like a prose, with
+            a myriad of possibilities, and he is a unique journey no matter where one starts reading. At the same time,
+            it is precisely because of its rich imagery and unique writing style that evokes an experience that the
+            reader relates to, that it can be called private and difficult to review.
+        </p>
+
+    </div>
+
+</div>
+<div >
+    <p id="note">*It's crucial to emphasize that the numbers associated with each theme and topic in the graph do not directly correspond to specific reviews. Since the analysis is conducted on a sentence-by-sentence basis rather than per review, these figures are derived by calculating the proportion of relevant sentences and then multiplying by the total number of reviews.</p>
+</div>
+
+</body>
+</html>
