@@ -11,7 +11,6 @@
 }
 
 body, html {
-    height: 100%;
     margin: 0;
     display: flex;
     background-image: url('../image/6-Salt and Pepper.png');
@@ -35,8 +34,17 @@ body, html {
 }
 
 .timeline_container{
-    position: absolute;
-    top:0%;
+    position: fixed; /* Fixed positioning relative to the viewport */
+    bottom: 0;       /* Positioned at the bottom */
+    left:2%;
+    transform: translateX(55%);
+    z-index: 999;
+    margin-bottom: 0.4%;
+}
+
+#timeline {
+ width:400%;
+    height: 400%;
 }
 
 #life_map_container{
@@ -55,6 +63,7 @@ body, html {
 
 }
 
+
 .legend{
     position:absolute;
     font-family: PTMono_regular;
@@ -72,25 +81,28 @@ body, html {
 #blue {
     color: #737d98;
 }
-#RU, #IT, #FR, #US {
-    position: absolute;
-}
+
 
 #RU, #US {
     cursor: pointer;
 }
+
+
 
 .country_info {
     /* Add your styles for the country_info divs here */
 }
 
 
+
 #RU {
-    top: 21.5%;
-    left: 21.5%;
-    height: 27%;
+    position: absolute;
+    top: 23.5%;
+    left: 19.7%;
+    height: 25.4%;
     width: auto;
 }
+
 
 #FR {
     top: 44%;
@@ -107,11 +119,13 @@ body, html {
 }
 
 
+
 #US{
-    top: 45.5%;
-    left: 69.5%;
-    height: 11.5%;
-    width: 11.5%;
+    position: absolute;
+    top: 46.2%;
+    left: 64.5%;
+    height: 10.8%;
+    width: 10.8%;
 }
 
 #country_info {
